@@ -139,6 +139,8 @@
 &trans         &kp LC(X)  &trans  &trans     &trans  &trans      &trans     &trans            &trans  &trans  &trans             &mkp MB3
 &trans         &trans     &trans  &trans     &trans  &trans      &kp LC(C)  &kp LC(V)                                            &kp RA(LEFT)
             >;
+
+            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
         layer_6 {
