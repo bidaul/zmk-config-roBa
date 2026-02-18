@@ -42,9 +42,9 @@
             key-positions = <0 1>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <>;
+        kyouseisyuuryou {
+            bindings = <&kp LC(LA(DELETE))>;
+            key-positions = <0 1 39>;
         };
 
         double_quotation {
