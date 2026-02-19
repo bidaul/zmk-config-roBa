@@ -1,5 +1,5 @@
 #include "roBa.dtsi"
-#include <input/processors.dtsi>
+#include <input/processors.dtsi>//オートマウスレイヤー関係の機能のインストール
 
 &default_transform {
     col-offset = <6>;
@@ -20,7 +20,7 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 5 5000>;
+        input-processors = <&zip_temp_layer 5 5000>;//この行がオートマウスレイヤーの指定+とどまる時間の指定５秒
     };
 };
 
@@ -62,6 +62,7 @@
     };
 };
 
+//オートマウスレイヤーに戻らないボタン群
 &zip_temp_layer {
     excluded-positions = <
         6 // U
@@ -69,5 +70,6 @@
         18 // J
         19 // K
         20 // l
+        42 // 右下
     >;
 };
