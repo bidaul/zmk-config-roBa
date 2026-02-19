@@ -12,7 +12,6 @@
 
 &trackball {
     automouse-layer = <5>;
-
     scroll-layers = <4>;
 
     // arrows {
@@ -128,10 +127,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans     &trans        &trans        &trans        &trans        &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans     &trans        &trans        &trans        &trans        &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &kp LG(D)  &kp LC(W)                                               &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                          &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans     &trans            &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans     &kp LS(NUMBER_1)  &trans        &trans                &trans                 &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &kp LG(D)  &kp LC(W)                                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
